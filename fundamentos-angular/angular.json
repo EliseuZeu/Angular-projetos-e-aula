@@ -5,7 +5,17 @@
   "projects": {
     "fundamentos-angular": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -99,6 +109,6 @@
     }
   },
   "cli": {
-    "analytics": "a39af564-0bf6-46ec-bc8a-9e184ab2c08c"
+    "analytics": "bd6dc938-906f-4da5-b73a-b339590f381f"
   }
 }
