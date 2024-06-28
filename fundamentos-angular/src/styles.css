@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 400px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 30px;
+}
+
+button:hover {
+  background-color: rgb(170, 16, 157);
+}
