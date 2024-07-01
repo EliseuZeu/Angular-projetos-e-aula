@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoggerService } from '../logger.service';
 
 @Component({
   selector: 'app-exemplos-angular',
@@ -6,9 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './exemplos-angular.component.css'
 })
 export class ExemplosAngularComponent {
-  nome = '';
+  nome = "";
+
+  constructor(private logger: LoggerService) {
+
+  }
 
   adicionarNome() {
-    alert(this.nome);
+    this.logger.logar(`O nome ${this.nome} foi adcionado`)
   }
 }
