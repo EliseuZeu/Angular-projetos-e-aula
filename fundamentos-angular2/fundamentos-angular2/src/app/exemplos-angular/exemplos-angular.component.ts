@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './exemplos-angular.component.css'
 })
 export class ExemplosAngularComponent {
-  nome = "";
+  nome = '';
+
   adicionarNome() {
-    alert(`O nome adicionado é: ${this.nome}`)
+    alert(this.nome);
   }
 }
