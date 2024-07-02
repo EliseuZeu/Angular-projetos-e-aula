@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+button {
+  background-color: #DDDDDD;
+  color: brown;
+  border: none;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button:hover {
+background-color: #FF33CC;
+color: white;
+}
