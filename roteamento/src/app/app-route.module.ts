@@ -7,14 +7,14 @@ import { SegundaPaginaComponent } from './segunda-pagina/segunda-pagina.componen
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 import { PaginaComParametrosComponent } from './pagina-com-parametros/pagina-com-parametros.component';
 import { PaginaProtegidaComponent } from './pagina-protegida/pagina-protegida.component';
-
+import { altoGuard } from './alto.guard';  // Ensure the correct path to your altoGuard
 
 
 const routes: Routes = [
   {
     path: "primeira-pagina", component: PrimeiraPaginaComponentComponent},
     {path: "segunda-pagina", component: SegundaPaginaComponent},
-    {path: "pagina-protegida", component: PaginaProtegidaComponent, canActivate: [AuthGuard]},
+    {path: "pagina-protegida", component: PaginaProtegidaComponent, canActivate: [altoGuard]},
     {path: "", redirectTo: "primeira-pagina", pathMatch: 'full'},
     {path: "**", component: PaginaNaoEncontradaComponent},
     {path: "pagina-com-parametros/:id", component: PaginaComParametrosComponent},
