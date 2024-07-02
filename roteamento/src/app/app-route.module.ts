@@ -5,13 +5,15 @@ import { PrimeiraPaginaComponentComponent } from './primeira-pagina-component/pr
 import { Router } from 'express';
 import { SegundaPaginaComponent } from './segunda-pagina/segunda-pagina.component';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
+import { PaginaComParametrosComponent } from './pagina-com-parametros/pagina-com-parametros.component';
 
 const routes: Routes = [
   {
     path: "primeira-pagina", component: PrimeiraPaginaComponentComponent},
     {path: "segunda-pagina", component: SegundaPaginaComponent},
     {path: "", redirectTo: "primeira-pagina", pathMatch: 'full'},
-    {path: "**", component: PaginaNaoEncontradaComponent}
+    {path: "**", component: PaginaNaoEncontradaComponent},
+    {path: "pagina-com-parametros/:id", component: PaginaComParametrosComponent}
 ]
 
 @NgModule({

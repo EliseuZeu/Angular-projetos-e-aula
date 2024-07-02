@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { __param } from 'tslib';
 
 @Component({
   selector: 'app-pagina-com-parametros',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './pagina-com-parametros.component.css'
 })
 export class PaginaComParametrosComponent {
+  id: number | null = null;
 
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe(__param => {
+      this.id = Number(__param.get("id"));
+    })
+  }
 }

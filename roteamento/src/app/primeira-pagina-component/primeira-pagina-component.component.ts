@@ -1,6 +1,5 @@
 import { Router } from 'express';
 import { Component } from '@angular/core';
-import { Route, Router, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-primeira-pagina-component',
@@ -9,9 +8,9 @@ import { Route, Router, Routes } from '@angular/router';
 })
 export class PrimeiraPaginaComponentComponent {
 
-  constructor(private router: Router) {}
+  //constructor() {}
 
-  moverParaSegundaPagina(){
-    this.router.navigate(["segunda-pagina"]);
-  }
+  //moverParaSegundaPagina(){
+ //  this.router.navigate(["segunda-pagina"]);
+  //}
 }
