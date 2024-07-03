@@ -4,7 +4,7 @@ import { CanActivateFn } from '@angular/router';
 import { altoGuard } from './alto.guard';
 
 describe('altoGuard', () => {
-  const executeGuard: CanActivateFn = (...guardParameters) => 
+  const executeGuard: CanActivateFn = (...guardParameters) =>
       TestBed.runInInjectionContext(() => altoGuard(...guardParameters));
 
   beforeEach(() => {
@@ -15,3 +15,5 @@ describe('altoGuard', () => {
     expect(executeGuard).toBeTruthy();
   });
 });
+
+

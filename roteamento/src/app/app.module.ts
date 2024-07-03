@@ -10,6 +10,7 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao
 import { PaginaComParametrosComponent } from './pagina-com-parametros/pagina-com-parametros.component';
 import { PaginaProtegidaComponent } from './pagina-protegida/pagina-protegida.component';
 import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AppRouteModule
+    AppRouteModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
