@@ -52,4 +52,6 @@ let boleto:[string, number, number] = ["agua conta", 199.90 , 344442232 ];
 
 dados.push();
 
-
+//Datas 
+let aniversario:Date = new Date("2022-02-21 05:00");
+console.log(aniversario.toString());
