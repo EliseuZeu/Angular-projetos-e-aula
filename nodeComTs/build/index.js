@@ -1,16 +1,7 @@
-
-
-type heroi = {
-    name: string;
-    raca: string;
-    idade: number;
-    descricao: string;
-};
-
-function printObjetos(pessoa: heroi){
+"use strict";
+function printObjetos(pessoa) {
     console.log(pessoa);
 }
-
 printObjetos({
     name: "Selina",
     raca: "Meia-Elfa",
