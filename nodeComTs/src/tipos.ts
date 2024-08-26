@@ -37,5 +37,8 @@ let meuCarro: carro = {
     ano: 2020
 };
 
+//array
+let dados: string[] = ["Eliseu", "ana", "maria"]
+let dados2: Array<string> = [""];
 
 
