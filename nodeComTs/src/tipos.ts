@@ -55,3 +55,23 @@ dados.push();
 //Datas 
 let aniversario:Date = new Date("2022-02-21 05:00");
 console.log(aniversario.toString());
+
+//funcao 
+
+function addNumber(x:number,y:number): number {
+    return x + y;
+}
+
+let soma: number = addNumber(4,5);
+console.log(soma);
+
+// multi tipos funcao 
+function CalltoFone(phone: number | string): number | string { // any para todos os tipos 
+    return phone;
+}
+
+//funções assicronas
+
+async function getDatabase(id: number): Promise<String> {
+    return "felipe";
+}
