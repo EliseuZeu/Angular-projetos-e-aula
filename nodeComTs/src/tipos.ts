@@ -41,4 +41,15 @@ let meuCarro: carro = {
 let dados: string[] = ["Eliseu", "ana", "maria"]
 let dados2: Array<string> = [""];
 
+let infos: (string | number)[] = ["eliseu", "30",30]
+
+
+//Tuplas - segui a ordem exata que foi escrito
+
+let boleto:[string, number, number] = ["agua conta", 199.90 , 344442232 ];
+
+//arrays e metodos 
+
+dados.push();
+
 
