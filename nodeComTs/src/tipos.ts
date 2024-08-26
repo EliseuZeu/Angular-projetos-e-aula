@@ -75,3 +75,18 @@ function CalltoFone(phone: number | string): number | string { // any para todos
 async function getDatabase(id: number): Promise<String> {
     return "felipe";
 }
+
+type robot = {
+    name: string;
+    id: number;
+}
+
+interface robo2 {
+    id: number;
+    name: string;
+}
+
+const  rob: robot = {
+    id: 1,
+    name: "felipe"
+}
