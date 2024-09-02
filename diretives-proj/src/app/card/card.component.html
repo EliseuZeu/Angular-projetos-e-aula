@@ -1,0 +1,10 @@
+<h1>My App</h1>
+<p>card works</p>
+<button>ola mundo</button>
+
+<ul>
+  <li *ngFor="let p of produtos; let i = index"> {{p}}</li>
+  <input (ngModel)="newItem" placeholder="Adicionar um Item">
+  <button (click)="Adicionar()">Adicionar</button>
+  <button (click)="remover()">Remover</button>
+</ul>
