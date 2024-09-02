@@ -11,14 +11,6 @@ export class CardComponent implements OnInit {
 
 
   constructor() {
-    this.produtos = [
-      "mouse",
-      "teclado",
-      "monitor",
-      "placa-mae",
-      "gabinete",
-      "fita"
-    ]
   }
 
   ngOnInit(): void {

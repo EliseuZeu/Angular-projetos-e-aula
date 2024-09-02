@@ -3,8 +3,8 @@
 <button>ola mundo</button>
 
 <ul>
-  <li *ngFor="let p of produtos; let i = index"> {{p}}</li>
+  <li *ngFor="let p of produtos"> {{p}}</li>
   <input (ngModel)="newItem" placeholder="Adicionar um Item">
-  <button (click)="Adicionar()">Adicionar</button>
+  <button  (click)="Adicionar()">Adicionar</button>
   <button (click)="remover()">Remover</button>
 </ul>
